@@ -1,0 +1,18 @@
+body{
+  background-image: url();
+  background-color: hsl(0, 0%, 8%);
+}
+
+.clock-container{
+
+}
+
+.clock{
+  color: aliceblue;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  text-shadow: 3px 3px 5px ;
+
+}
