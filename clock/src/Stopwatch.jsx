@@ -2,9 +2,9 @@ import React,{useState,useEffect,useRef} from 'react';
 
 function Stopwatch(){
 
-    const[isRunning, setisRunning] = useState(false);
+    const[isRunning, setIsRunning] = useState(false);
     const[elapsedTime, setElapsedTime] = useState(0);
-    const IntervalIdRef = useRef(null);
+    const intervalIdRef = useRef(null);
     const startTimeRef = useRef(0);
      
     useEffect(() => {
@@ -41,7 +41,19 @@ function Stopwatch(){
 
     function formatTime(){
 
-        return `00:00:00`;
+        let hours = Math.floor(elapsedTime / (1000 * 60 * 60));
+        let minutes = Math.floor(elapsedTime / (1000 * 60) % 60);
+        let seconds = Math.floor(elapsedTime / (1000) % 60 );
+        let milliseconds = Math.floor((elapsedTime % 1000) / 10);
+
+        hours = String(hours).padStart(2, "0");
+        minutes = String(minutes).padStart(2, "0");
+        seconds = String(seconds).padStart(2, "0");
+        milliseconds = String(milliseconds).padStart(2, "0");
+        
+
+
+        return `${minutes}:${seconds}:${milliseconds}`;
 
     }
 
