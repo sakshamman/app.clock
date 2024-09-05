@@ -1,9 +1,22 @@
 body{
   background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   background-color: hsl(0, 0%, 8%);
+  margin:0;
+  align-items: center;
+
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
 }
 
 .clock-container{
+
+backdrop-filter: blur(5);
 
 }
 
