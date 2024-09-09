@@ -4,7 +4,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-color: hsl(0, 75%, 42%);
+  background-color: hsla(0, 5%, 11%, 0.445);
   margin:0;
   align-items: center;
 
@@ -14,41 +14,222 @@ body{
   align-items: center;
 }
 
-.clock-container{
-
-backdrop-filter: blur(5);
-
-}
-
-.clock{
-  color: aliceblue;
-  font-size: 6rem;
-  font-weight: bold;
-  font-family: monospace;
+h1{
   text-align: center;
-  text-shadow: 3px 3px 5px ;
-
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 30px;
 }
 
-.stopwatch{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  border: 5px solid;
-  border-radius:50px;
-  background-color: white;
-  padding:30px;
-}
-
-.display{
-  font-size: 5rem;
-  font-family:monospace;
-  font-weight: bold;
-  color:grey;
-  text-shadow: black;
-  margin-bottom: 25px;
-}
-
-.controls button{
+  /* Navigation container */
+  nav {
+    text-align: center;
+    margin-bottom: 30px;
+  }
   
+  /* Navigation Links */
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #3498db;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+  }
+  
+  /* Page container */
+  .page-container {
+    text-align: center;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  .clock-container, .stopwatch, .timer-container {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+   /* Button styles for stopwatch and timer */
+   .btn {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .start-button {
+    background-color: #4CAF50;
+  }
+  
+  .stop-button {
+    background-color: #FF9800;
+  }
+  
+  .reset-button {
+    background-color: #f44336;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Footer style */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+  }
+
+
+
+
+/* Container for the clock */
+.clock-container {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+}
+
+/* Clock display styles */
+.clock {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: hsl(60, 56%, 91%);
+}
+
+
+/* Container for the stopwatch */
+.stopwatch {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+}
+
+/* Display styles for the stopwatch */
+.display {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+/* Controls container */
+.controls {
+  margin-top: 20px;
+}
+
+/* Button styles */
+.btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-button {
+  background-color: #4CAF50;
+}
+
+.stop-button {
+  background-color: #FF9800;
+}
+
+.reset-button {
+  background-color: #f44336;
+}
+
+/* Button hover effect */
+.btn:hover {
+  opacity: 0.9;
+}
+
+
+
+/* Container styles */
+.timer-container {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Timer title */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input container */
+.input-container {
+  margin-bottom: 20px;
+}
+
+/* Input styles */
+input[type="number"] {
+  padding: 10px;
+  font-size: 1em;
+  width: 200px;
+  margin-right: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button styles */
+.btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pause-btn {
+  background-color: #FF9800;
+  color: white;
+}
+
+.reset-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Hover effects for buttons */
+.btn:hover {
+  opacity: 0.9;
 }
